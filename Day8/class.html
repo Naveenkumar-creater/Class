@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let person= class{
+            constructor(name,age,dateofbirth,sex){
+                this.name=name;
+                this.age=age;
+                this.sex=sex;
+                this.dateofbirth=dateofbirth;
+            }
+        }
+        console.log(new person("naveen",24,"05-04-1999","male"))
+    </script>
+    <script>
+        let Rectangle = class {
+  constructor(height, width) {
+    this.height = height;
+    this.width = width;
+  }
+};
+console.log(new Rectangle(10,10));
+    </script>
+    <script>
+        function Person() {
+            this.firstName = "unknown";
+            this.lastName = "unknown";
+            this.getFullName = function(){
+                return this.firstName + " " + this.lastName;
+            }
+        };
+
+var person1 = new Person();
+person1.firstName = "Steve";
+person1.lastName = "Jobs";
+console.log(person1.getFullName())
+    </script>
+    <script>
+        let price=class{
+            constructor(distance,mins){
+                this.distancefare=10;
+                this.timefare=3;
+                this.basefare=20;
+                this.kmfare=(distance/1000)*this.distancefare;
+                this.minfare=(mins/60)*this.timefare;
+                this.amount=this.kmfare+this.minfare+this.basefare;
+                this.totalfare=Math.floor(this.amount/10)*10;
+            }
+            total() {
+                console.log(this.totalfare);
+                }
+        }
+      let price1=  new price(112000,90);
+      price1.total()
+    </script>
+
+</body>
+</html>
